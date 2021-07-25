@@ -1,3 +1,5 @@
+# GraalVM Compiler
+
 The GraalVM compiler is a dynamic compiler written in Java that integrates with the HotSpot JVM. It has a focus on high performance and extensibility.
 In addition, it provides optimized performance for languages implemented with [Truffle Framework](https://github.com/graalvm/graal/tree/master/truffle)-based languages running on the JVM.
 For brevity, the GraalVM compiler is often referred to as "the compiler" below.
@@ -25,7 +27,7 @@ export PATH=$PWD/mx:$PATH
 The compiler depends on a JDK that supports a compatible version of JVMCI ([JVM Compiler Interface](https://bugs.openjdk.java.net/browse/JDK-8062493)).
 There is a JVMCI [port](https://github.com/graalvm/graal-jvmci-8) for JDK 8 and the required JVMCI version is built into the JDK as of JDK 11.
 A JVMCI-enabled JDK 8 can be downloaded from [GitHub](https://github.com/graalvm/openjdk8-jvmci-builder/releases)
-or you can [build](#building-jvmci-jdk8) it yourself.
+or you can [build](#building-jvmci-jdk-8) it yourself.
 
 The JVMCI JDKs that Graal is currently tested against are specified in [common.json](../common.json).
 
